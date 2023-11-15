@@ -95,6 +95,14 @@ func main() {
 	// Mock Data - @todo - implement DB
 	books = append(books, Book{ID: "1", Isbn: "448743", Title: "Book One", Author: &Author{FirstName: "John", LastName: "Doe"}})
 	books = append(books, Book{ID: "2", Isbn: "847564", Title: "Book Two", Author: &Author{FirstName: "Steve", LastName: "Smith"}})
+	books = append(books, Book{ID: "3", Isbn: "123456", Title: "Book Three", Author: &Author{FirstName: "Jane", LastName: "Doe"}})
+	books = append(books, Book{ID: "4", Isbn: "789012", Title: "Book Four", Author: &Author{FirstName: "Emily", LastName: "Smith"}})
+	books = append(books, Book{ID: "5", Isbn: "345678", Title: "Book Five", Author: &Author{FirstName: "Anna", LastName: "Johnson"}})
+	books = append(books, Book{ID: "6", Isbn: "901234", Title: "Book Six", Author: &Author{FirstName: "Robert", LastName: "Brown"}})
+	books = append(books, Book{ID: "7", Isbn: "567890", Title: "Book Seven", Author: &Author{FirstName: "Michael", LastName: "Davis"}})
+	books = append(books, Book{ID: "8", Isbn: "234567", Title: "Book Eight", Author: &Author{FirstName: "Sarah", LastName: "Miller"}})
+	books = append(books, Book{ID: "9", Isbn: "678901", Title: "Book Nine", Author: &Author{FirstName: "Jessica", LastName: "Taylor"}})
+	books = append(books, Book{ID: "10", Isbn: "012345", Title: "Book Ten", Author: &Author{FirstName: "William", LastName: "Anderson"}})
 
 	// Route handlers - Endpoints
 	r.HandleFunc("/api/books", getBooks).Methods("GET")
